@@ -1,0 +1,16 @@
+{
+  "name": "cosmin-instructor-inot",
+  "version": "1.0.0",
+  "description": "Site de prezentare pentru Cosmin. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alexoltean",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,214 @@
+:root{
+    --purple: #4F2EC9;
+    --green: #00d084;
+    --dark: #202124;
+    --gray: #F5F7F9;
+    --light-gray: #F6F6F6;
+    --blue: #52a9d7;
+}
+
+/** General Styles **/
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  li,
+  section,
+  div,
+  a,
+  span {
+    padding: 0;
+    margin: 0;
+  }
+
+
+  
+ /** Utilities **/
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.dark-text {
+    color: var(--dark);
+}
+
+.purple-text {
+    color: var(--purple);
+}
+
+.gray-bg{
+    background-color: var(--gray);
+}
+
+.ftsz-16{
+    font-size: 16px;
+}
+
+.ftsz-15{
+    font-size: 15px; /** Mobile p **/
+}
+
+.ftsz-20{
+    font-size: 20px;
+}
+
+.ftsz-24{
+    font-size: 24px;
+}
+
+.ftsz-50{
+    font-size: 50px;
+}
+
+.btn {
+    border-radius: 100px;
+    padding: 15px 30px;
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--purple);
+}
+
+.btn-primary:hover{
+    border-color: transparent;
+    background: var(--purple);
+}
+.transition-ease{
+    transition: 0.25s ease-in-out;
+}
+
+.desktop-card-height{
+    height: 200px;
+}
+
+.card-shadow{
+    box-shadow: 0px 25px 15px -20px rgba(135, 138, 170, 0.2);
+}
+
+
+/** Components **/
+.slider-item {
+ 
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    color: white;
+  }
+
+  .slider-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+
+  .slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 18px;
+    line-height: 1;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slick-prev i, .slick-next i {
+    font-size: 20px; /* Adjust the size of the Font Awesome icons */
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.width-desktop{
+    max-width: 550px;
+}
+
+.nav-pills .nav-link {
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-pills .nav-link.active::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    margin-top: 8px; 
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card{
+    border:none;
+}
+
+.accordion-button{
+    background-color: var(--purple);
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--purple)!important;
+    color: #fff;
+}
+
+.accordion-button:focus{
+    box-shadow: none!important;
+}
+
+.accordion-button::after{
+    content: "";
+    background-image: none !important;
+    font-weight: 800;
+    font-family: "Font Awesome 5 Free";
+}

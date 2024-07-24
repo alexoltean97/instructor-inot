@@ -179,10 +179,10 @@
                 </div>
                 <nav class="d-flex main-nav">
                     <ul>
-                        <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold" href="">Despre</a></li>
-                        <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold" href="">Sport</a></li>
-                        <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold" href="">Cursuri</a></li>
-                        <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold" href="">Galerie</a></li>
+                        <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold transition-ease link-hover" href="#about">Despre</a></li>
+                        <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold transition-ease link-hover" href="#training">Antrenament</a></li>
+                        <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold transition-ease link-hover" href="#schedule">Orar</a></li>
+                        <!-- <li class="d-inline px-3"><a class="decoration-none dark-text ftsz-16 fw-bold transition-ease link-hover" href="">Galerie</a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -216,7 +216,7 @@
             <h1 class="ftsz-50 pb-2">Transforma Apa in Distractie!</h1>
             <p class="ftsz-20 pb-2">Descoperă plăcerea înotului cu antrenamente personalizate pentru copii. Fie că sunt începători sau avansați, fiecare copil va învăța să înoate în siguranță și cu încredere.</p>
             <div class="link-box mt-3">
-                <a class="btn btn-primary decoration-none ftsz-16" href="#">Galerie</a>        
+                <a class="btn btn-primary decoration-none ftsz-16" href="tel:0724859977">Contact</a>        
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@
             <h1 class="ftsz-50 pb-2">Dezvoltare prin înot!</h1>
             <p class="ftsz-20 pb-2" >Înotul nu este doar un sport, ci o modalitate excelentă de a te dezvolta fizic și mental. Antrenamentele mele sunt concepute și adaptate pentru toate categoriile de varsta! Fie ca va doriti performanta, menținere sau doar cursuri de incepatori!</p>
             <div class="link-box mt-3">
-                <a class="btn btn-primary decoration-none ftsz-16" href="#" class="btn btn-primary">Galerie</a>        
+                <a class="btn btn-primary decoration-none ftsz-16" href="tel:0724859977" class="btn btn-primary">Contact</a>        
             </div>
           </div>
         </div>
@@ -236,19 +236,20 @@
             <h1 class="ftsz-50 pb-2">Pregatiri pentru performanta!</h1>
             <p class="ftsz-20 pb-2">Indiferent dacă copilul tău doreste să devină un înotător, poloist sau doar dorește să își îmbunătățească abilitățile, antrenamentele sunt personalizate, adaptate fiecărui nivel și obiectiv.</p>
             <div class="link-box mt-3">
-                <a class="btn btn-primary decoration-none ftsz-16" href="#" class="btn btn-primary">Galerie</a>        
+                <a class="btn btn-primary decoration-none ftsz-16" href="tel:0724859977" class="btn btn-primary">Contact</a>        
             </div>
           </div>
         </div>
 
       </div>
 
-      <section class="about pt-5 pb-5">
+      <section class="about pt-5 pb-5" id="about">
         <div class="container d-flex flex-wrap">
             <div class="intro col-12 col-lg-6">
                 <strong><span class="blue-text text-uppercase mb-2">Sigur si distractiv</span></strong>
                 <h2 class="dark-text mt-3">Înotul: O activitate pentru toată familia</h2>
     
+                <div class="mobile-align">
                 <ul class="nav nav-pills mb-3 mt-2" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
@@ -266,6 +267,8 @@
                             aria-selected="false">Cursuri adulti</button>
                     </li>
                 </ul>
+            </div>
+
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                         aria-labelledby="pills-home-tab">
@@ -304,7 +307,7 @@
         </div>
     </section>
 
-    <section class="swim gray-bg pt-5 pb-5">
+    <section class="swim gray-bg pt-5 pb-5" id="training">
         <div class="container">
             <h2 class="dark-text mb-5">De ce sa te antrenezi cu mine?</h2>
 
@@ -351,7 +354,7 @@
         </div>
     </section>
 
-    <section class="classes pt-5 pb-5">
+    <section class="classes pt-5 pb-5" id="schedule">
         <div class="container">
             <h2 class="mb-3">Orar</h2>
             <div class="accordion" id="accordionExample">
@@ -436,36 +439,34 @@
 
     </section>
 
-
-    <footer class="main-footer gray-bg pt-5 pb-5 ">
+    <footer class="main-footer gray-bg pt-5 pb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xs-12">
-                    <ul class="footer-list">
+            <div class="row flex-column flex-lg-row">
+                <div class="col-lg-6 col-xs-12 mb-3 mb-lg-0">
+                    <ul class="footer-list d-flex flex-column flex-lg-row">
                         <!-- Button trigger modal -->
-                        <li class="d-inline">
-                            <button class="btn-footer" type="button" data-bs-toggle="modal"
-                                data-bs-target="#cookies">
+                        <li class="d-inline mb-2 mb-lg-0">
+                            <button class="btn-footer" type="button" data-bs-toggle="modal" data-bs-target="#cookies">
                                 Politica de Cookies
                             </button>
                         </li>
                         <li class="d-inline">
-                            <button class="btn-footer" type="button" class="" data-bs-toggle="modal"
-                                data-bs-target="#terms">
+                            <button class="btn-footer" type="button" data-bs-toggle="modal" data-bs-target="#terms">
                                 Termeni si Conditii
                             </button>
                         </li>
                     </ul>
                 </div>
-
+    
                 <div class="col-lg-6 col-xs-12">
-                    <div class="copy-right text-end">
+                    <div class="copy-right text-start text-lg-end">
                         <p class="montserat-font">&copy; Copyright: Alex Oltean 14Dev</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    
 
     <script src="https://kit.fontawesome.com/157ae09d42.js" crossorigin="anonymous" defer></script>
     <script src="assets/libraries/jquery.min.js"></script>
@@ -477,7 +478,9 @@
         $('.intro-slider').slick({
             prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
             nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-            mobileFirst: true
+            mobileFirst: true,
+            autoplay:true,
+            autoplaySpeed: 3000
         });
     });
     </script>

@@ -15,6 +15,7 @@ $(document).ready(function () {
     const toggleFontSizes = (isMobile) => {
         const mainHeadings = $("h1.ftsz-50.pb-2, h1.ftsz-24.pb-2");
         const paragraphs = $("p.ftsz-20, p.ftz-15");
+        const pMargin = $("p.mt-5");
 
         if (isMobile) {
             mainHeadings.each(function () {
@@ -23,12 +24,20 @@ $(document).ready(function () {
             paragraphs.each(function () {
                 toggleClass($(this), "ftz-15", "ftsz-20");
             });
+
+            pMargin.each(function () {
+                toggleClass($(this), "mt-1", "mt-5");
+            });
         } else {
             mainHeadings.each(function () {
                 toggleClass($(this), "ftsz-50", "ftsz-24");
             });
             paragraphs.each(function () {
                 toggleClass($(this), "ftsz-20", "ftz-15");
+            });
+
+            pMargin.each(function () {
+                toggleClass($(this), "mt-5", "mt-1");
             });
         }
     };
@@ -37,7 +46,6 @@ $(document).ready(function () {
         const width = $(window).width();
         const isMobile = width <= 767;
         const isTablet = width > 767 && width <= 992;
-        const isDesktop = width > 992;
 
         toggleFontSizes(isMobile);
 
